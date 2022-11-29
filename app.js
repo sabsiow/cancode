@@ -18,7 +18,7 @@ const CLIENT_SECRET = process.env.CLIENT_SECRET;
 
 const SCOPES = (process.env.SCOPE.split(/ |, ?|%20/) || ['crm.objects.contacts.write']).join(' ');
 
-const REDIRECT_URI = `http://https://zany-bee-shift.cyclic.app/oauth-callback`;
+const REDIRECT_URI = `https://zany-bee-shift.cyclic.app/oauth-callback`;
 
 const refreshTokenStore = {};
 const accessTokenCache = new NodeCache({ deleteOnExpire: true });
